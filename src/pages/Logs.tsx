@@ -29,7 +29,7 @@ export const Logs: React.FC = () => {
           const res = await apiClient.get('/audit_logs/');
           setAuditLogs(res.data);
         } else {
-          const res = await apiClient.get('/diagnostics/');
+          const res = await apiClient.get('/diagnostics_logs/');
           setClientLogs(res.data);
         }
       } catch (e) {
